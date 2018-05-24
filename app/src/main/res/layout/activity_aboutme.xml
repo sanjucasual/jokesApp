@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD600"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context=".funnyjokes">
+
+    <TextView
+        android:id="@+id/aboutustextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Hindi Chutkule /jokes 2018 App is Designed and developed by Rajeev Sharma ,if you have any objection regarding the content of this app please feel free to inform me at at \n\nName:Rajeev Sharma\n Email:rajeevsharmatech@gmail.com \n Contact:+91 8208474281 \n (COUNTRY-INDIA)\n\n\nBe in touch with me on Facebook by clicking the following link! Thanks"
+        android:textColor="#000000"
+        android:textSize="19sp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutustextview"
+        android:id="@+id/facebookbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#008fbc"
+        android:src="@drawable/fbimage"/>
+
+
+</RelativeLayout>

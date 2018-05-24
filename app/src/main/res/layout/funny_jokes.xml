@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.course99.hindichutkule.hindijokes">
+
+    <include
+        android:id="@+id/toolbarid"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linearlayoutid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/toolbarid"
+        android:layout_weight="3">
+
+        <ScrollView
+            android:id="@+id/scrollViewscrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbarid"
+            android:layout_margin="15dp"
+            android:fadeScrollbars="false"
+            android:scrollbarThumbVertical="@android:color/white">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/textviewdetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:padding="10dp"
+                        android:textColor="#000000"
+                        android:textSize="17sp"
+
+                        />
+
+                </LinearLayout>
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/linearlayoutid"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/nexbutton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/nextbutton" />
+
+        <ImageButton
+            android:id="@+id/sharebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/sharebutton" />
+
+        <ImageButton
+            android:id="@+id/previousbutton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/previousbutton" />
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>

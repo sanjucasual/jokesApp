@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/fontmenu"
+        android:icon="@drawable/font"
+        app:showAsAction="always"
+        android:title="Font Size"/>
+
+    <item
+        android:id="@+id/sharemenu"
+        android:icon="@drawable/sharebutton"
+        app:showAsAction="always"
+        android:title="Font Size"/>
+
+
+
+    <item
+        android:id="@+id/rateus"
+
+        android:title="Rate Us"/>
+    <item
+        android:id="@+id/moreapps"
+        android:title="More Apps"/>
+    <item
+        android:id="@+id/aboutus"
+        android:title="About Us"/>
+
+
+
+
+
+
+
+</menu>
